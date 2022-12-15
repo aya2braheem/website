@@ -1,0 +1,60 @@
+.con{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+
+}
+.con>*{
+    padding: 5%;
+    margin: 5%;
+    flex:1 100%;  
+    border-radius: 10px;
+}
+.header{
+    background-color: #e63973;
+    height: 120px;
+
+}
+.footer{
+    background-color: rgb(165, 255, 255);
+    height: 88;
+}
+.main{
+    background-color: aquamarine;
+    height: 300;
+    font-size: small;
+}
+.aside1{
+    background-color: blueviolet;
+    
+}
+.aside2{
+    background-color: rgb(184, 140, 225);
+ 
+}
+@media screen and (min-width:600px) {
+    .aside{
+        flex: 1;
+    }
+    
+}
+@media screen and (min-width:800px){
+    .main{
+        flex:3;
+        order:2;
+        height: 500px;
+
+    }
+    .aside1{
+        order:1;
+        height: 500px;
+    }
+    .aside2{
+        order:3;
+        height: 500px;
+    }
+    .footer{
+        order:4;
+    }
+}

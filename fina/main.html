@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-image: url('2.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+}
+#container{
+   display: grid;
+   grid-template-areas: "header header header";
+   
+}
+#bar{grid-area: header;}
+
+#bar{
+   overflow: hidden; /* Hide overflow */
+ 
+  background: rgb(95, 110, 125); /* Black background with 0.5 opacity */
+  width: 100%; /* Full width */
+  padding: 20px; /* Some padding */
+}
+</style>
+</head>
+<body>
+   <section id="container">
+      <div id="bar">header</div>
+      
+   </section>
+
+
+
+</body>
+</html>
