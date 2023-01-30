@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url('brown.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+        }
+        #video{
+            text-align:center;
+            margin-top: 30px;
+            
+        }
+        a{
+    color: #eee7e5;
+    text-decoration: none;
+ 
+}
+        
+        footer>*{
+    color: #eee7e5;
+    margin: 5px;
+    text-align: center;
+    
+}
+.log{
+    height: 200px;
+    width: 200px;
+    padding-left:1400px;
+}
+
+footer{
+    background-color: rgba(186, 167, 161, 0.362);
+    border:2px solid #3D220D;
+    width: 100%;
+    height: 80px;
+    font-size: 10px;
+    position: fixed;
+  left: 0;
+  bottom: 0;
+    padding: 0;
+    
+    
+}
+#logo{
+    height: 50px;
+    width: 50px; 
+    
+}
+#story{
+    color:aliceblue;
+}
+#bu{
+    background-color: rgba(245, 245, 220, 0);;
+   border-radius: 40%;
+   color:#BAB1B6;
+   border: 3px solid #391b02;
+}
+h1{
+    color: #BAB1B6;
+    text-align: center;
+    margin: 0px;
+}
+p{
+    text-align: center;
+    width: 830px;
+    margin-left: 330px;
+    
+}
+
+    </style>
+</head>
+
+
+
+
+
+
+<body>
+    <div>
+    <a href="choose.html" class="logo">
+        <img id="logo"src="ma_logo.png" alt="logo">
+    </a>
+    <a href="logout.php" class="log">
+        <img id="logo"src="log.png" alt="logo">
+    </a>
+   
+    <h1>Our Story</h1>
+</div>
+    <div id="video" > 
+        <button id="bu"onclick="playPause()">Play/Pause</button> 
+        <button id="bu" onclick="makeBig()">Big</button>
+        <button id="bu" onclick="makeSmall()">Small</button>
+        <button id="bu" onclick="makeNormal()">Normal</button>
+        <br><br>
+        <video id="video1" width="620" >
+          <source src="video.mp4" type="video/mp4">
+         
+          Your browser does not support HTML video.
+        </video>
+      </div> 
+      
+      <script> 
+      var myVideo = document.getElementById("video1"); 
+      
+      function playPause() { 
+        if (myVideo.paused) 
+          myVideo.play(); 
+        else 
+          myVideo.pause(); 
+      } 
+      
+      function makeBig() { 
+          myVideo.width = 860; 
+      } 
+      
+      function makeSmall() { 
+          myVideo.width = 420; 
+      } 
+      
+      function makeNormal() { 
+          myVideo.width = 620; 
+      } 
+      </script> 
+      <p id="story">A rat named Remy dreams of becoming a great French chef despite his family's wishes and the obvious problem of being a rat in a decidedly rodent-phobic profession. When fate places Remy in the sewers of Paris, he finds himself ideally situated beneath a restaurant made famous by his culinary hero, Auguste Gusteau. Despite the apparent dangers of being an unlikely, and certainly unwanted, visitor in the kitchen of a fine French restaurant, Remy's passion for cooking soon sets into motion a hilarious and exciting rat race that turns the culinary world of Paris upside down.
+
+      </p>
+      
+      <footer>
+        
+        
+        
+                   <p class="contact-list">
+                   <a href="location.html"><p>Address:</p></a>
+                     <p>798 South Park Avenue, New York, USA</p>
+                   </p>
+        <p class="copyright">Aya2braheem © 2023</p>
+          </footer>
+</body>
+</html>
